@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        minSdkVersion 24
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    provided 'com.google.android.things:androidthings:0.1-devpreview'
+    compile 'com.android.support:support-annotations:24.2.0'
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-all:1.10.19'
+    testCompile 'org.powermock:powermock-module-junit4:1.6.6'
+    testCompile 'org.powermock:powermock-api-mockito:1.6.6'
+
+    //compile project (':apa102')
+    //compile project (':button')
+    //compile project (':bmx280')
+    //compile project (':ht16k33')
+    //compile project (':pwmspeaker')
+    //compile project (':pwmservo')
+    compile project (':ads7830')
+    //compile project (':mma8453')
+    compile project (':pca9685')
+    compile project (':pca9535')
+
+
+}
